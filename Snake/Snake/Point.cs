@@ -47,5 +47,10 @@ namespace Snake
             else if (direction == Direction.DOWN)
                 y += offset;
         }
+
+        internal bool IsHit(Point food)
+        {
+            return this.x == food.x && this.y == food.y;
+        }
     }
 }
