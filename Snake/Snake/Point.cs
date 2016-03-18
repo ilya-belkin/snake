@@ -10,6 +10,12 @@ namespace Snake
         public int x, y;
         public char sym;
 
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
+
         public Point(int _x, int _y, char _sym)
         {
             x = _x;
